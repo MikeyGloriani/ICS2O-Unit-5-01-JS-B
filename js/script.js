@@ -26,7 +26,7 @@ const randomNumber = Math.floor(Math.random() * 6) + 1
 /**
  * This function displays the slider value.
  */
-function myButtonClicked() {
+function myButtonClicked(buttonOnChecked) {
   buttonOnChecked = document.getElementById("option-1").checked
 
   if (buttonOnChecked == true) {
