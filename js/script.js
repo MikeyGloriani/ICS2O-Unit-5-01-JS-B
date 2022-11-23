@@ -13,13 +13,6 @@ if (navigator.serviceWorker) {
   })
 }
 
-/**
- * This function updates the slider value.
- */
-function updateSliderValue(valueFromSlider) {
-  document.getElementById("slider-value").innerHTML = valueFromSlider
-}
-
 // returns a random integer from 1 to 6 into variable "randomNumber"
 const randomNumber = Math.floor(Math.random() * 6) + 1
 
