@@ -20,17 +20,20 @@ function updateSliderValue(valueFromSlider) {
   document.getElementById("slider-value").innerHTML = valueFromSlider
 }
 
+// returns a random integer from 1 to 6 into variable "randomNumber"
+const randomNumber = Math.floor(Math.random() * 6) + 1
+
 /**
  * This function displays the slider value.
  */
 function myButtonClicked() {
-  buttonOnChecked = document.getElementById("flash1").checked
+  buttonOnChecked = document.getElementById("option-1").checked
 
   if (buttonOnChecked == true) {
     document.getElementById("radio-button-value").innerHTML =
-      "<p>Value is: On</p>"
+      "<p>Your number is +</p>" + randomNumber
   } else {
     document.getElementById("radio-button-value").innerHTML =
-      "<p>Value is: Off</p>"
+      "<p>Your number is -</p>" + randomNumber
   }
 }
