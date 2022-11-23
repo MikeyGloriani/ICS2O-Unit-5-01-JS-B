@@ -8,14 +8,30 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-Template-PWA/sw.js", {
-    scope: "/ICS2O-Template-PWA/",
+  navigator.serviceWorker.register("/ICS2O-Unit-5-02-JS-B/sw.js", {
+    scope: "/ICS2O-Unit-5-02-JS-B/",
   })
 }
 
+
 /**
- * This function displays an alert.
+ * This function updates the slider value.
+ */
+ function updateSliderValue(valueFromSlider) {
+  document.getElementById("slider-value").innerHTML = valueFromSlider
+}
+
+/**
+ * This function displays the slider value.
  */
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  buttonOnChecked = document.getElementById('flash1').checked
+
+  if (buttonOnChecked == true) {
+    document.getElementById("radio-button-value").innerHTML =
+    "<p>Value is: On</p>"
+  } else {
+    document.getElementById("radio-button-value").innerHTML =
+    "<p>Value is: Off</p>"
+  }
 }
